@@ -1,0 +1,25 @@
+Explain what is execution context in detail with diagram
+
+
+
+
+An execution context is a concept in JavaScript that defines the environment in which a piece of code is executed. It consists of three main components:
+
+Variable Environment: Stores variables and function declarations.
+Lexical Environment: Contains variables and functions in the current scope.
+This Binding: Refers to the object that the current code is being executed on.
+Diagram:
+
+Execution Context
+├── Variable Environment
+│   ├── Variables
+│   └── Function declarations
+├── Lexical Environment
+│   └── Variables
+└── This Binding
+The Variable Environment holds variables and function declarations, including the function's arguments and locally declared variables. It also stores hoisted variables and functions.
+
+The Lexical Environment represents the current scope and contains variables defined within that scope, including block-scoped variables, function expressions, and arrow functions.
+
+The This Binding refers to the object that the current code is operating on. It can be explicitly set using call(), apply(), or bind(), or it is determined by how a function is called (e.g., as a method, with new, or globally).
+
