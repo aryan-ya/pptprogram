@@ -1,0 +1,116 @@
+<!-- static  -->
+
+the default positions for all elements
+they are not affected by top bottom left or right properties
+
+<!-- fixed -->
+
+The element is positioned relative to the viewport (the browser window).
+It will not move even if the page is scrolled.
+
+<!-- Sticky -->
+
+The element is positioned based on the user's scroll position.
+It acts like a hybrid of relative and fixed positioning.
+
+<!-- relative -->
+
+The element is positioned relative to its normal position.
+The surrounding elements are not affected by the element with relative positioning.
+
+<!-- Absolute -->
+
+The element is positioned relative to its closest positioned ancestor (if any), otherwise relative to the initial containing block.
+It is removed from the normal flow of the document, so other elements will fill the space it leaves.
+
+
+
+<!--****************************** example **********************************-->
+
+<!-- static -->
+
+<style>
+    .static-box {
+      position: static;
+      width: 200px;
+      height: 200px;
+      background-color: red;
+    }
+  </style>
+  
+  <div class="static-box"></div>
+  
+
+  <!-- ************fixed*************** -->
+
+  <style>
+    .fixed-box {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      width: 200px;
+      height: 200px;
+      background-color: blue;
+    }
+  </style>
+  
+  <div class="fixed-box"></div>
+  
+  <!-- ************sticky************** -->
+
+  <style>
+    .sticky-box {
+      position: sticky;
+      top: 50px;
+      width: 200px;
+      height: 200px;
+      background-color: yellow;
+    }
+  </style>
+  
+  <div class="sticky-box"></div>
+
+  <!--******* relative ***********-->
+
+  <style>
+    .relative-box {
+      position: relative;
+      top: 30px;
+      left: 30px;
+      width: 200px;
+      height: 200px;
+      background-color: green;
+    }
+  </style>
+  
+  <div class="relative-box"></div>
+
+  <!--*********** Absolute ***********-->
+
+  <style>
+    .container {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      background-color: lightgray;
+    }
+  
+    .absolute-box {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      width: 200px;
+      height: 200px;
+      background-color: orange;
+    }
+  </style>
+  
+  <div class="container">
+    <div class="absolute-box"></div>
+  </div>
+  
+
+
+  
+  
+  
