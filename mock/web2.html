@@ -77,10 +77,10 @@
     function validateForm(event) {
       event.preventDefault();
       
-      // Clear any previous error messages
+
       clearErrors();
       
-      // Get form input values
+     
       const name = document.getElementById('name').value;
       const email = document.getElementById('email').value;
       const phone = document.getElementById('phone').value;
@@ -90,14 +90,13 @@
       const date = document.getElementById('date').value;
       const color = document.getElementById('color').value;
 
-      // Perform validation
       if (name === '') {
         displayError('nameError', 'Name is required.');
       }
       
-      // Validate other fields similarly
       
-      // If all validations pass, submit the form
+      
+     
       if (!hasErrors()) {
         document.getElementById('registrationForm').submit();
       }
