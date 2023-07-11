@@ -1,0 +1,98 @@
+<!-- 1 What’s Box Model in CSS ?   -->
+<!-- Ans. The CSS box model is a way of representing HTML elements in CSS. It consists of four parts: the content, the padding, the border, and the margin. The content is the actual text or image that is displayed in the element. The padding is the space around the content. The border is the line that surrounds the padding and content. The margin is the space outside the border.
+
+The box model is used to control the size and appearance of HTML elements. For example, you can use the box model to set the width and height of an element, to add a border around an element, or to create space between elements. -->
+
+
+<!-- Q.2 What are the Different Types of Selectors in CSS & what are the advantages of them?
+
+Simple selectors: These selectors select elements based on their element name, id, or class. For example, h1 selects all h1 elements, #my-id selects the element with the id my-id, and .my-class selects all elements with the class my-class.
+Advantages: Simple selectors are easy to use and understand. They are also very efficient, as they only need to match one element at a time.
+Combinator selectors: These selectors select elements based on their relationship to other elements. For example, h1 + p selects all p elements that are immediately following an h1 element. h1 ~ p selects all p elements that are siblings of h1 elements.
+Advantages: Combinator selectors allow you to select elements in a more complex way. They can also be used to create more efficient selectors, as they can match multiple elements at once.
+Pseudo-class selectors: These selectors select elements based on their state or condition. For example, :hover selects elements when the mouse is hovering over them. :active selects elements when they are being clicked.
+Advantages: Pseudo-class selectors allow you to style elements based on their behavior. They can also be used to create more dynamic and interactive web pages. -->
+
+
+<!-- .Q.3 What is VW/VH ? -->
+
+<!-- VW and VH are CSS units that represent the viewport width and height, respectively. They are relative units, meaning that their value is based on the size of the viewport. For example, 1vw is equal to 1% of the viewport width, and 1vh is equal to 1% of the viewport height.
+
+VW and VH units are often used for responsive web design, as they allow you to create layouts that scale automatically with the size of the viewport. For example, you could use VW to set the width of a container, so that it always takes up 100% of the viewport width, regardless of the size of the screen.
+ -->
+
+ <!-- Q.4 Whats difference between Inline, Inline Block and block ?
+
+ Ans Inline elements: Inline elements are displayed on the same line as other content. They do not have their own width or height, and they are not affected by the margin or padding properties. Examples of inline elements include <span>, <a>, and <img>.
+    Inline-block elements: Inline-block elements are a hybrid of inline and block elements. They are displayed on the same line as other content, but they can have their own width and height. They are also affected by the margin and padding properties. Examples of inline-block elements include <input>, <select>, and <button>.
+    Block elements: Block elements are displayed on a new line, and they take up the full width of their container. They are affected by the margin and padding properties. Examples of block elements include <div>, <p>, and <ul>.
+     -->
+
+ <!-- Q.5 How is Border-box different from Content Box? -->
+  
+ <!-- Ans. Border-box includes the border and padding in the width and height of an element. This means that if you set an element's width to 100px, that 100px will include any border or padding you added. The content box will shrink to absorb that extra width.
+
+ Content-box does not include the border and padding in the width and height of an element. This means that if you set an element's width to 100px, that 100px will only include the content of the element. The border and padding will be added on top of the content box.
+ 
+ In general, border-box is the preferred method, as it makes it easier to control the size and appearance of elements. -->
+ 
+ 
+ <!-- Q.6 What’s z-index and How does it Function ? -->
+
+ <!-- Ans.z-index is a CSS property that determines the stacking order of elements. Elements with a higher z-index will be displayed on top of elements with a lower z-index. This means that if you have two elements overlapping each other, the element with the higher z-index will be displayed on top.
+
+ The z-index property is a numeric value, and it can be any positive or negative number. The default z-index value is 0. Elements with a z-index of 0 will be displayed at the bottom of the stacking order, and elements with a z-index of 100 will be displayed at the top of the stacking order. Elements with the same z-index value will be displayed in the order in which they appear in the HTML code. -->
+ 
+
+
+ <!-- Q.7 What’s Grid & Flex and difference between them? -->
+
+ <!-- Ans Grid and Flex are CSS layout systems used to arrange and align elements on a webpage. Grid creates a two-dimensional grid structure with rows and columns, while Flex focuses on one-dimensional layouts along a single axis. Grid provides more control over item placement, while Flex is better suited for dynamic content resizing. -->
+
+ <!-- Q.8 Difference between absolute and relative and sticky and fixed position explain with example. -->
+
+ <!-- Ans Absolute positioning allows elements to be positioned relative to its nearest positioned ancestor or the document itself. Relative positioning positions elements relative to their normal flow. Sticky positioning is similar to relative, but the element becomes fixed once a specified scroll threshold is reached. Fixed positioning fixes the element relative to the viewport. -->
+
+9 <!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Layout</title>
+  <style>
+    /* Desktop */
+    @media (min-width: 992px) {
+      .container {
+        width: 960px;
+      }
+    }
+
+    /* Tablet */
+    @media (min-width: 768px) and (max-width: 991px) {
+      .container {
+        width: 720px;
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+      .container {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>This is a responsive layout</h1>
+    <p>This layout works on desktop, mobile, and tablet devices.</p>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+ 
